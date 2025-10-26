@@ -1,0 +1,42 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1761450702413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761450721956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\r\n <body>\r\n     <div class=\"pink\"></div>\r\n     <div class=\"clock\">\r\n-        <spn>00 : 00 : 00</spn>\r\n+        <h1>00 : 00 : 00</h1>\r\n         <div class=\"bottom\">\r\n             <h4>HOURS</h4>\r\n             <h4>MINS</h4>\r\n             <h4>SEC</h4>\r\n"
+                },
+                {
+                    "date": 1761450744525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\r\n <body>\r\n     <div class=\"pink\"></div>\r\n     <div class=\"clock\">\r\n-        <h1>00 : 00 : 00</h1>\r\n+        <span>00 : 00 : 00</span>\r\n         <div class=\"bottom\">\r\n             <h4>HOURS</h4>\r\n             <h4>MINS</h4>\r\n             <h4>SEC</h4>\r\n"
+                },
+                {
+                    "date": 1761450766832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,13 @@\n </head>\r\n <body>\r\n     <div class=\"pink\"></div>\r\n     <div class=\"clock\">\r\n-        <span>00 : 00 : 00</span>\r\n+        <span>00</span>\r\n+        <span>:</span>\r\n+        <span>00</span>\r\n+        <span>:</span>\r\n+        <span>00</span>\r\n         <div class=\"bottom\">\r\n             <h4>HOURS</h4>\r\n             <h4>MINS</h4>\r\n             <h4>SEC</h4>\r\n"
+                },
+                {
+                    "date": 1761450810456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,15 @@\n </head>\r\n <body>\r\n     <div class=\"pink\"></div>\r\n     <div class=\"clock\">\r\n+        <div class=\"time\">\r\n         <span>00</span>\r\n         <span>:</span>\r\n         <span>00</span>\r\n         <span>:</span>\r\n         <span>00</span>\r\n+        </div>\r\n         <div class=\"bottom\">\r\n             <h4>HOURS</h4>\r\n             <h4>MINS</h4>\r\n             <h4>SEC</h4>\r\n"
+                },
+                {
+                    "date": 1761450953798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n <body>\r\n     <div class=\"pink\"></div>\r\n     <div class=\"clock\">\r\n         <div class=\"time\">\r\n-        <span>00</span>\r\n+        <span id=\"hours\">00</span>\r\n         <span>:</span>\r\n-        <span>00</span>\r\n+        <span id=\"mins\">00</span>\r\n         <span>:</span>\r\n-        <span>00</span>\r\n+        <span id=\"sec\">00</span>\r\n         </div>\r\n         <div class=\"bottom\">\r\n             <h4>HOURS</h4>\r\n             <h4>MINS</h4>\r\n"
+                },
+                {
+                    "date": 1761451020386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,7 @@\n             <h4>SEC</h4>\r\n         </div>\r\n     </div>\r\n     <div class=\"blue\"></div>\r\n+    <script src=\"./main.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761450702413,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Digital clock</title>\r\n    <link rel=\"stylesheet\" href=\"./style.css\">\r\n</head>\r\n<body>\r\n    <div class=\"pink\"></div>\r\n    <div class=\"clock\">\r\n        <spn>00 : 00 : 00</spn>\r\n        <div class=\"bottom\">\r\n            <h4>HOURS</h4>\r\n            <h4>MINS</h4>\r\n            <h4>SEC</h4>\r\n        </div>\r\n    </div>\r\n    <div class=\"blue\"></div>\r\n</body>\r\n</html>"
+        }
+    ]
+}

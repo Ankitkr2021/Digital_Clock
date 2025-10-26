@@ -1,0 +1,66 @@
+{
+    "sourceFile": "main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1761450998704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761451040432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n let hour = document.getElementById(\"hour\");\r\n let mins = document.getElementById(\"mins\");\r\n let sec = document.getElementById(\"sec\");\r\n \r\n-let currentTime = new Date();\r\n+let currentTime = new Date(\"hh:mm:ss\");\r\n \r\n console.log(currentTime);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761451046622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n let hour = document.getElementById(\"hour\");\r\n let mins = document.getElementById(\"mins\");\r\n let sec = document.getElementById(\"sec\");\r\n \r\n-let currentTime = new Date(\"hh:mm:ss\");\r\n+let currentTime = new Date(\"time\");\r\n \r\n console.log(currentTime);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761451058063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n let hour = document.getElementById(\"hour\");\r\n let mins = document.getElementById(\"mins\");\r\n let sec = document.getElementById(\"sec\");\r\n \r\n-let currentTime = new Date(\"time\");\r\n+let currentTime = new Date(time);\r\n \r\n console.log(currentTime);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761451103325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n let hour = document.getElementById(\"hour\");\r\n let mins = document.getElementById(\"mins\");\r\n let sec = document.getElementById(\"sec\");\r\n \r\n-let currentTime = new Date(time);\r\n+let currentTime = new Date();\r\n \r\n\\ No newline at end of file\n-console.log(currentTime);\n+\r\n+\r\n+console.log(currentTime.getHours(), currentTime.getHours()currentTime.getHours());\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761451115291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,5 @@\n let currentTime = new Date();\r\n \r\n \r\n \r\n-console.log(currentTime.getHours(), currentTime.getHours()currentTime.getHours());\n\\ No newline at end of file\n+console.log(currentTime.getHours(), currentTime.getMinutes()currentTime.getSeconds());\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761451127655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n let currentTime = new Date();\r\n \r\n \r\n \r\n-console.log(currentTime.getHours(), currentTime.getMinutes()currentTime.getSeconds());\n\\ No newline at end of file\n+console.log(currentTime.getHours());\r\n+console.log(currentTime.getHours());\r\n+console.log(currentTime.getHours());\r\n"
+                },
+                {
+                    "date": 1761451142827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n \r\n \r\n \r\n console.log(currentTime.getHours());\r\n-console.log(currentTime.getHours());\r\n-console.log(currentTime.getHours());\r\n+console.log(currentTime.getMinutes());\r\n+console.log(currentTime.getSeconds());\r\n"
+                },
+                {
+                    "date": 1761451162005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n let sec = document.getElementById(\"sec\");\r\n \r\n let currentTime = new Date();\r\n \r\n+hour.innerHTML\r\n \r\n-\r\n console.log(currentTime.getHours());\r\n console.log(currentTime.getMinutes());\r\n console.log(currentTime.getSeconds());\r\n"
+                },
+                {
+                    "date": 1761451176305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n let sec = document.getElementById(\"sec\");\r\n \r\n let currentTime = new Date();\r\n \r\n-hour.innerHTML\r\n+hour.innerHTML = currentTime.getHours();\r\n \r\n console.log(currentTime.getHours());\r\n console.log(currentTime.getMinutes());\r\n console.log(currentTime.getSeconds());\r\n"
+                },
+                {
+                    "date": 1761451217281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,7 @@\n \r\n let currentTime = new Date();\r\n \r\n hour.innerHTML = currentTime.getHours();\r\n+mins.innerHTML = currentTime.getMinutes();\r\n+sec.innerHTML = currentTime.getSeconds();\r\n \r\n-console.log(currentTime.getHours());\r\n-console.log(currentTime.getMinutes());\r\n-console.log(currentTime.getSeconds());\r\n"
+                },
+                {
+                    "date": 1761451317483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-let hour = document.getElementById(\"hour\");\r\n+let hour = document.getElementById(\"hours\");\r\n let mins = document.getElementById(\"mins\");\r\n let sec = document.getElementById(\"sec\");\r\n \r\n let currentTime = new Date();\r\n"
+                },
+                {
+                    "date": 1761451375967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,4 @@\n \r\n hour.innerHTML = currentTime.getHours();\r\n mins.innerHTML = currentTime.getMinutes();\r\n sec.innerHTML = currentTime.getSeconds();\r\n-\r\n"
+                }
+            ],
+            "date": 1761450998704,
+            "name": "Commit-0",
+            "content": "let hour = document.getElementById(\"hour\");\r\nlet mins = document.getElementById(\"mins\");\r\nlet sec = document.getElementById(\"sec\");\r\n\r\nlet currentTime = new Date();\r\n\r\nconsole.log(currentTime);"
+        }
+    ]
+}

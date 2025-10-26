@@ -58,9 +58,16 @@ body{
     margin-top: 10px;
 }
 
-h1{
+.time {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 54px;
     font-weight: 300;
     margin-top: 10px;
